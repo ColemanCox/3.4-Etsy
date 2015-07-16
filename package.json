@@ -1,7 +1,6 @@
 {
   "name": "3.3-clock",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +16,11 @@
   },
   "homepage": "https://github.com/cbotwell/3.3-clock#readme",
   "dependencies": {
-    "broccoli": "^0.16.4",
+    "broccoli": "https://registry.npmjs.org/broccoli/-/broccoli-0.16.4.tgz",
     "broccoli-funnel": "^0.2.3",
     "broccoli-inject-livereload": "^0.2.0",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-sass": "^0.6.6"
-  }
+  },
+  "description": ""
 }
