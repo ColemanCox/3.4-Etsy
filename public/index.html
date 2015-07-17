@@ -2,64 +2,34 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="app.css">
-    <title>Etsy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <title>Etsy</title>
 </head>
 <body>
 
-    <article>
+  <div class="header">
+    <h2>Etsy</h2>
 
-          <div class = "header">
-              <h2>Etsy</h2>
-
-<form>
-            <input type="text" placeholder="Search..." required>
-            <input type="button" value="Search">
-</form>
-
+    <form>
+      <input type="text" placeholder="Search..." required>
+      <input type="button" value="Search">
+    </form>
     <span class = "dropdown">Browse</span>
-
-
-
-
-     <div class = "sidebar">
-
-         <p>All Categories
-
-        <ul class = "ula">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-          </ul>
-
-
+    <div class = "sidebar">
+      <p>All Categories</p>
     </div>
+  </div>
 
-
-
-
-
-
-
-     </article>
-  </body
-
-
-
+  <template id="entry-template">
+    <img src="{{ image-url }}" alt="whatevs">
+    <div class = "footer">
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <span class = "price">{{price}}</span>
+    </div>
+  </template>
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
 <script src="load-etsy.js"></script>
