@@ -9,26 +9,37 @@
 </head>
 <body>
 
-  <div class="header">
+<div class="header">
     <h2>Etsy</h2>
-
-    <form>
+    <ul>
+   <li> <form class = "form">
       <input type="text" placeholder="Search..." required>
-      <input type="button" value="Search">
-    </form>
+      <input type="button" value="Search"></form>
+      </li>
+      </ul>
+      </div>
+
+
+
+
     <span class = "dropdown">Browse</span>
+
+    </div>
     <div class = "sidebar">
       <p>All Categories</p>
     </div>
-  </div>
+
+  <div class = "shopListing"></div>
 
   <template id="entry-template">
-    <img src="{{ image-url }}" alt="whatevs">
-    <div class = "footer">
-        <h2>{{title}}</h2>
-        <p>{{description}}</p>
-        <span class = "price">{{price}}</span>
-    </div>
+    {{#each results}}
+      <img src="{{ image-url }}" alt="whatevs">
+      <div class = "footer">
+          <h2>{{title}}</h2>
+          <p>{{Shop.shop_name}}</p>
+          <span class = "price">{{price}}</span>
+      </div>
+    {{/each}}
   </template>
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
