@@ -9,10 +9,18 @@
 </head>
 <body>
 
-<div class="header">
+
     <h2>Etsy</h2>
-    <ul>
-   <li> <form class = "form">
+    <ul class = "etsies"></ul>
+    <template id = "entry-template">
+   <li>
+       <span>{{ title }}</span>
+       <img src = "{{ div }}">/portrait_xlarge.{{ }}
+       <p>{{ content }}</p>
+       </li>
+       </template>
+
+   <form class = "form">
       <input type="text" placeholder="Search..." required>
       <input type="button" value="Search"></form>
       </li>
