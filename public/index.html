@@ -2,13 +2,53 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="app.css">
-    <title>Etsy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <title>Etsy</title>
 </head>
 <body>
 
+
+    <h2>Etsy</h2>
+    <ul class = "etsies"></ul>
+    <template id = "entry-template">
+   <li>
+       <span>{{ title }}</span>
+       <img src = "{{ div }}">/portrait_xlarge.{{ }}
+       <p>{{ content }}</p>
+       </li>
+       </template>
+
+   <form class = "form">
+      <input type="text" placeholder="Search..." required>
+      <input type="button" value="Search"></form>
+      </li>
+      </ul>
+      </div>
+
+
+
+
+    <span class = "dropdown">Browse</span>
+
+    </div>
+    <div class = "sidebar">
+      <p>All Categories</p>
+    </div>
+
+  <div class = "shopListing"></div>
+
+  <template id="entry-template">
+    {{#each results}}
+      <img src="{{ image-url }}" alt="whatevs">
+      <div class = "footer">
+          <h2>{{title}}</h2>
+          <p>{{Shop.shop_name}}</p>
+          <span class = "price">{{price}}</span>
+      </div>
+    {{/each}}
+  </template>
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
 <script src="load-etsy.js"></script>

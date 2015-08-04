@@ -14,5 +14,7 @@ var loadEtsy = function (query, onload, immediate) {
         success: onload
     });
 
-    immediate();
+    if (immediate) {
+        immediate();
+    }
 };
